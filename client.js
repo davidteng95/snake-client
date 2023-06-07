@@ -6,6 +6,12 @@ const connect = function () {
     port: 50541// PORT number here,
   });
 
+  conn.on("connect", () => {
+    // code that does something when the connection is first established
+    console.log("Successfully connected to game server");
+    conn.write("Name: DAV");
+  });
+
   // interpret incoming data as text
   conn.setEncoding("utf8");
 
