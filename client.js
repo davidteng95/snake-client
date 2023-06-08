@@ -1,5 +1,6 @@
 // establishes a connection with the game server
 const net = require("net");
+
 const connect = function () {
   const conn = net.createConnection({
     host: "165.227.47.243",// IP address here,
@@ -10,12 +11,12 @@ const connect = function () {
     // code that does something when the connection is first established
     console.log("Successfully connected to game server");
     conn.write("Name: DAV");
-    conn.write("Move: up");
-    let delay = 50;
-    setInterval(() => {
-      conn.write("Move: down");
-       delay += 50;
-    }, delay);
+    //conn.write("Move: up");
+    //let delay = 50;
+    //setInterval(() => {
+      //conn.write("Move: down");
+       //delay += 50;
+    //}, delay);
     
   });
 
