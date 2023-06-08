@@ -16,8 +16,8 @@ const setupInput = function () {
 
 const handleUserInput = function(key) {
   const stdout = process.stdout;
-  if (data === '\u0003') {
-    stdout.write("Exited the game.");
+  if (key === '\u0003') {
+    stdout.write("Exited the game.\n");
     process.exit();
   }
 };
