@@ -39,3 +39,4 @@ const setupInput = function (conn) {
 module.exports = {
   setupInput
 };
+
