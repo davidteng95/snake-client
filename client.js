@@ -10,6 +10,13 @@ const connect = function () {
     // code that does something when the connection is first established
     console.log("Successfully connected to game server");
     conn.write("Name: DAV");
+    conn.write("Move: up");
+    let delay = 50;
+    setInterval(() => {
+      conn.write("Move: down");
+       delay += 50;
+    }, delay);
+    
   });
 
   // interpret incoming data as text
